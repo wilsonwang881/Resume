@@ -4,7 +4,7 @@
 
     \cventry
     {}
-    {Approximating Ideal Prefetches in L2 Cache}
+    {R-Max: Approximating Ideal Cache Management}
     {}
     {}
     {
@@ -23,7 +23,10 @@
     {}
     {
         \begin{cvitems}
-            \item An approach to prime the micro-architectural states after context switches to reduce stalls due to cold cache states.
+            \item Developed a technique to prime microarchitectural states after context switches to mitigate stalls from cold caches in short-timeslice workloads.
+            \item Modeled context-switch effects and cache warm-up behavior in ChampSim to evaluate
+            performance sensitivity across workloads.
+            \item Reclaimed an average 25\% of performance loss caused by 1 ms context switch intervals, evaluated on GAP, XSBench, SPEC CPU2017 and CVP-1 workloads with a 35KiB L2 storage cost.
         \end{cvitems}
     }
     
